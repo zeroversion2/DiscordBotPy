@@ -1,4 +1,4 @@
 config.json
-.idea
-venv
+/.idea/
+/venv/
 Repl.py
