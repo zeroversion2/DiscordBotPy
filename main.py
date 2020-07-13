@@ -28,11 +28,11 @@ async def on_ready():
     #shell.BotShell().cmdloop()
 
 
-@bot.event
-async def on_message(message):
-    if message.content == "cunnytime" and message.author.id == bot.user.id:
-        for i in range(0, 1000):
-            await message.channel.send("cunny")
+# @bot.event
+# async def on_message(message):
+#     if message.content == "cunnytime" and message.author.id == bot.user.id:
+#         for i in range(0, 1000):
+#             await message.channel.send("cunny")
 
 
 @bot.command()

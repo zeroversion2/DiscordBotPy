@@ -7,9 +7,8 @@ class System(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.is_owner()
     async def cog_check(self, ctx):
-        pass
+        return self.bot.owner_id == ctx.author.id
 
     @commands.command()
     async def create_server(self, ctx, *, name: str):
